@@ -22,7 +22,7 @@ Parameters:
 
   AMIId:
     Type: AWS::EC2::Image::Id
-    Default: ami-12345
+    Default: ami-03814457ed908d8f6
     Description: The AMI ID to use.
 
 Resources:
