@@ -14,7 +14,7 @@ Parameters:
 
   InstanceType:
     Type: String
-    Default: t2.micro
+    Default: t3.micro
     AllowedValues:
       - t2.micro
       - t2.small
@@ -39,12 +39,12 @@ Resources:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: Allow SSH access
-      VpcId: vpc-0abcd1234efgh5678
+      VpcId: vpc-0d6be9c86a7b422e8
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 22
           ToPort: 22
-          CidrIp: 300.0.0.0/0
+          CidrIp: 0.0.0.0/0
 
 Outputs:
   InstanceId:
