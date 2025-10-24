@@ -15,9 +15,6 @@ Parameters:
   InstanceType:
     Type: String
     Default: t3.micro
-    AllowedValues:
-      - t2.micro
-      - t2.small
     Description: EC2 instance type.
 
   AMIId:
